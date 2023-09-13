@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "isNew": {
+      "type": "boolean",
+      "default": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "shois": {
+      "type": "string"
+    },
+    "keyys": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::keyy.keyy",
+      "inversedBy": "products"
+    },
+    "berand": {
+      "type": "boolean",
+      "default": false
+    },
+    "discont": {
+      "type": "decimal"
+    },
+    "disconttt": {
+      "type": "string",
+      "default": "SAR"
+    },
+    "imagee": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "products"
+    },
+    "eyeglasses": {
+      "type": "boolean",
+      "default": false
+    },
+    "sunglasses": {
+      "type": "boolean",
+      "default": false
+    },
+    "lenses": {
+      "type": "boolean"
+    }
+  }
+}

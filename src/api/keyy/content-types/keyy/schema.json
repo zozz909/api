@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "keyys",
+  "info": {
+    "singularName": "keyy",
+    "pluralName": "keyys",
+    "displayName": "Keyy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "black": {
+      "type": "string"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "mappedBy": "keyys"
+    }
+  }
+}

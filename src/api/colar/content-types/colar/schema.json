@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colars",
+  "info": {
+    "singularName": "colar",
+    "pluralName": "colars",
+    "displayName": "Colar",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "colar": {
+      "type": "string"
+    }
+  }
+}

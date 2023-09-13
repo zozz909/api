@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "iphon": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "totalPric": {
+      "type": "decimal"
+    },
+    "order_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order-item.order-item",
+      "mappedBy": "order"
+    },
+    "countryi": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "name2": {
+      "type": "string"
+    },
+    "chikord": {
+      "type": "boolean",
+      "default": false
+    },
+    "check1": {
+      "type": "string"
+    }
+  }
+}
